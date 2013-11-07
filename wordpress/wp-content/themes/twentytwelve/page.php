@@ -19,10 +19,6 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
-				<?php previous_link(); ?>
-				<?php next_link(); ?>
-				<?php // echo '<div style="float:left;">'. previous_page_not_post('') .'</div>'; ?>
-				<?php // echo '<div style="float:right;">'. next_page_not_post('') .'</div>'; ?>
 				<?php comments_template( '', true ); ?>
 			<?php endwhile; // end of the loop. ?>
 
